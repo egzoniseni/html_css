@@ -1,0 +1,351 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+.text-left{
+    text-align: left;
+
+}
+.text-right{
+    text-align: right;
+}
+
+.active { 
+    /* text-decoration: underline; */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* HOME SECTION */
+section.home {
+    width: 100%;
+    height: 100vh;
+
+    background: rgb(223,133,39);
+background: linear-gradient(221deg, rgba(223,133,39,1) 14%, rgba(98,85,76,1) 46%, rgba(69,69,41,1) 70%, rgba(147,164,172,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo, nav{ 
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;
+}
+
+
+.logo {
+    width: 40%;
+    
+}
+
+
+.logo img {
+    width: 100%;    
+    display: block;
+
+}
+nav{
+    width: 60%;
+    
+}
+    
+ul.active{
+    /* text-decoration: underline; */
+}
+
+nav ul {
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    width: 25%;
+    /* display: block; */
+}
+
+nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    
+    color: brown;
+    text-decoration: none;
+}
+.promotion {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.promotion h1 {
+    font-size: 52px;
+    color: rgba(54, 54, 45, 0.904);
+   
+
+}
+
+.promotion p {
+    color: rgb(44, 43, 41);
+    font-size: 24px;
+     margin: 40px 0;
+}
+
+.promotion a {
+    display: inline-block;
+    color: rgb(44, 43, 41);
+    font-size: 20px;
+    border: 2px solid rgb(46, 44, 34);
+    padding : 6px 20px;
+    text-decoration: none;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+
+ .promotion a:hover {
+    color: rgb(24, 15, 15);
+    background-color: rgb(148, 141, 131);
+ }
+
+.promotion .text,
+.promotion .image{
+    align-self: center;
+
+}
+
+/* SHOP SECTION */
+section.shop{
+    width: 100%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    padding: 20px 0;
+
+}
+section.shop h2{
+    text-align: center;
+    color: rgb(64, 73, 38);
+    font-size: 64px;
+    text-transform: uppercase;
+
+}
+section.shop p {
+    color: rgb(56, 56, 52);
+    margin: 20px 0 ;
+    font-size: 24px;
+    text-align: center;
+}
+
+section.shop .products {
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+section.shop .product{
+    position: relative;
+    overflow: hidden;
+}
+
+.one, .two, .three {
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.one { 
+    background-image:url(./assets/css/images/3.jpg) ;
+    
+}
+.two {
+    background-image: url(./assets/css/images/3.jpg);
+}
+.three { 
+    background-image: url(./assets/css/images/3.jpg);
+}
+
+ .products .details{
+    height: 100%;
+    padding: 0 50px;
+    background-color: rgb(69, 78, 78, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.6s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.product:hover .details{
+    top: 0%;
+
+}
+
+.products .details h3{
+    color: rgb(139, 122, 122);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.products .details p {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    margin: 40px;
+}
+
+
+.products .details a{
+width: 20%;
+display: block;
+margin: 0 auto;
+border: 2px solid black;
+color: black;
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-size: 18px;
+transition: all 0.4s;
+}
+.products .details a:hover{
+    transform: scale(4);
+}
+
+
+.moreproducts { 
+        width: 15%;
+        display: block;
+        margin: 20px auto;
+        border: 2px solid black;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        transition: all 0.4s;
+
+        }
+
+.shop .moreproducts:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* about SECTION */
+
+
+
+section.about{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 26, 26);
+
+    background-image:url(./assets/css/images/wallpaper3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+}
+
+
+section.about .wrapper{
+    display: flex;
+    justify-content: flex-end;
+
+}
+section.about .details{
+    width: 60%;
+    height: 70vh;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(105, 104, 85);
+}
+section.about .details h2{
+    font-size: 44px;
+   text-align: center;
+    text-transform: uppercase;
+
+}
+section.about .details p {
+    margin-top: 50px ;
+    margin-right: 100px;
+    font-size: 14px;
+    color: rgb(126, 133, 108);
+    
+}
+/* section CONTACT */
+section.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(233, 228, 221);
+
+    background-image: url(./assets/css/images/map1.jpg);
+    background-repeat:no-repeat ;
+    background-position: top right;
+}
+
+section.contact .contact-info-form{
+    width: 60%;
+    height: 100vh;
+    color: brown;
+    flex-direction: column;
+    justify-content: center;
+}
+section.contact input,
+section.contact textarea {
+    width: 70%;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 3px solid black;
+    display: block;
+    padding: 10px 0px ;
+    color: black;
+    background-color: transparent;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+section.contact button {
+    display: inline-block;
+    color: rgb(12, 12, 12);
+    font-size: 20px;
+    border: 2px solid rgb(73, 68, 68);
+    padding: 6px 20px;
+    text-decoration: none;
+    transition: all 0.4s;
+    text-transform: uppercase;
+
+}
+section.contact button:hover {
+    color: rgb(77, 71, 163);
+    background-color: rgb(15, 5, 5);
+}
+section.contact .info{
+    margin-top: 50px;
+    font-size: 24px;
+}
+section.contact span {
+    display: block;
+}
